@@ -1,0 +1,16 @@
+<!-- fake_data.html -->
+ 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake Researchers</title>
+</head>
+<body>
+    <h1>Fake Researchers</h1>
+    <ul>
+        {% for researcher in researchers %}
+            <li>{{ researcher.first_name }} {{ researcher.last_name }} - {{ researcher.email }} - {{ researcher.phone }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
