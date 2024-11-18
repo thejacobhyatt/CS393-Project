@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'RMS.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'rms',
+        'NAME': 'researchdb',
         'USER': 'django',
         'PASSWORD': 'mysecretpassword',
         'HOST': 'localhost',

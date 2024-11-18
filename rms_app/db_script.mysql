@@ -1,0 +1,142 @@
+-- Create the database
+DROP DATABASE IF EXISTS ResearchDB;
+CREATE DATABASE ResearchDB;
+CREATE USER IF NOT EXISTS 'django'@'localhost' IDENTIFIED BY 'mysecretpassword';
+GRANT ALL PRIVILEGES ON ResearchDB.* TO 'django'@'localhost' WITH GRANT OPTION;
+
+-- Use the database
+USE ResearchDB;
+
+-- Table for Status
+CREATE TABLE Status (
+    status_id INT AUTO_INCREMENT PRIMARY KEY,
+    status_name VARCHAR(50) NOT NULL,
+    status_color CHAR(6) NOT NULL
+);
+
+-- Table for Department
+CREATE TABLE Department (
+    department_id INT AUTO_INCREMENT PRIMARY KEY,
+    department_head VARCHAR(50) NOT NULL,
+    department_loc CHAR(6) NOT NULL
+);
+
+-- Table for Advisor
+CREATE TABLE Advisor (
+    advisor_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL
+);
+
+-- Table for Researcher
+CREATE TABLE Researcher (
+    researcher_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    phone VARCHAR(50) NOT NULL
+);
+
+-- Table for Sponsor
+CREATE TABLE Sponsor (
+    sponsor_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    phone VARCHAR(15) NOT NULL,
+    amount_donated INT NOT NULL
+);
+
+-- Table for ResearchProject
+CREATE TABLE ResearchProject (
+    project_id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    biography TEXT,
+    status_id INT NOT NULL,
+    department_id INT NOT NULL,
+    start_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (status_id) REFERENCES Status(status_id) ON DELETE RESTRICT,
+    FOREIGN KEY (department_id) REFERENCES Department(department_id) ON DELETE RESTRICT
+);
+
+-- Many-to-Many relationship tables
+CREATE TABLE ResearchProject_Advisor (
+    project_id INT NOT NULL,
+    advisor_id INT NOT NULL,
+    PRIMARY KEY (project_id, advisor_id),
+    FOREIGN KEY (project_id) REFERENCES ResearchProject(project_id) ON DELETE CASCADE,
+    FOREIGN KEY (advisor_id) REFERENCES Advisor(advisor_id) ON DELETE CASCADE
+);
+
+CREATE TABLE ResearchProject_Researcher (
+    project_id INT NOT NULL,
+    researcher_id INT NOT NULL,
+    PRIMARY KEY (project_id, researcher_id),
+    FOREIGN KEY (project_id) REFERENCES ResearchProject(project_id) ON DELETE CASCADE,
+    FOREIGN KEY (researcher_id) REFERENCES Researcher(researcher_id) ON DELETE CASCADE
+);
+
+CREATE TABLE ResearchProject_Sponsor (
+    project_id INT NOT NULL,
+    sponsor_id INT NOT NULL,
+    PRIMARY KEY (project_id, sponsor_id),
+    FOREIGN KEY (project_id) REFERENCES ResearchProject(project_id) ON DELETE CASCADE,
+    FOREIGN KEY (sponsor_id) REFERENCES Sponsor(sponsor_id) ON DELETE CASCADE
+);
+
+-- Insert fake data into Status
+INSERT INTO Status (status_name, status_color) VALUES
+('Pending', 'FF0000'),
+('Active', '00FF00'),
+('Completed', '0000FF');
+
+-- Insert fake data into Department
+INSERT INTO Department (department_head, department_loc) VALUES
+('Dr. John Doe', 'NY'),
+('Dr. Jane Smith', 'CA'),
+('Dr. Emily White', 'TX');
+
+-- Insert fake data into Advisor
+INSERT INTO Advisor (first_name, last_name, email) VALUES
+('Alice', 'Brown', 'alice.brown@example.com'),
+('Bob', 'Green', 'bob.green@example.com'),
+('Charlie', 'Black', 'charlie.black@example.com');
+
+-- Insert fake data into Researcher
+INSERT INTO Researcher (first_name, last_name, email, phone) VALUES
+('David', 'White', 'david.white@example.com', '123-456-7890'),
+('Emma', 'Jones', 'emma.jones@example.com', '234-567-8901'),
+('Frank', 'Taylor', 'frank.taylor@example.com', '345-678-9012');
+
+-- Insert fake data into Sponsor
+INSERT INTO Sponsor (name, email, phone, amount_donated) VALUES
+('TechCorp', 'contact@techcorp.com', '456-789-0123', 50000),
+('BioHealth', 'support@biohealth.com', '567-890-1234', 75000),
+('EduFund', 'info@edufund.org', '678-901-2345', 100000);
+
+-- Insert fake data into ResearchProject
+INSERT INTO ResearchProject (title, biography, status_id, department_id) VALUES
+('AI in Medicine', 'Researching AI applications in diagnostics.', 2, 1),
+('Renewable Energy Systems', 'Exploring next-gen solar technology.', 1, 2),
+('Cybersecurity Frameworks', 'Developing new protocols for secure networks.', 3, 3);
+
+-- Insert fake data into ResearchProject_Advisor
+INSERT INTO ResearchProject_Advisor (project_id, advisor_id) VALUES
+(1, 1),
+(1, 2),
+(2, 2),
+(3, 3);
+
+-- Insert fake data into ResearchProject_Researcher
+INSERT INTO ResearchProject_Researcher (project_id, researcher_id) VALUES
+(1, 1),
+(1, 2),
+(2, 2),
+(3, 3);
+
+-- Insert fake data into ResearchProject_Sponsor
+INSERT INTO ResearchProject_Sponsor (project_id, sponsor_id) VALUES
+(1, 1),
+(2, 2),
+(3, 3);
+
