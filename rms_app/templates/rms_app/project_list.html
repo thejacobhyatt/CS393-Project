@@ -1,0 +1,53 @@
+{% extends "rms_app/main.html" %}
+
+{% block content %}
+<h1>Project List</h1>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Biography</th>
+        <th>Status</th>
+        <th>Department</th>
+        <th>Start Date</th>
+        <th>Advisors</th>
+        <th>Researchers</th>
+        <th>Sponsors</th>
+    </tr>
+    {% for project in projects %}
+    <tr>
+        <td>{{ project.title }}</td>
+        <td>{{ project.biography }}</td>
+        <td>{{ project.status }}</td>
+        <td>{{ project.department }}</td>
+        <td>{{ project.start_date }}</td>
+        
+        <!-- Iterate through related Advisors -->
+        <td>
+            {% for advisor in project.advisors.all %}
+                {{ advisor.name }}{% if not forloop.last %}, {% endif %}
+            {% empty %}
+                No Advisors
+            {% endfor %}
+        </td>
+
+        <!-- Iterate through related Researchers -->
+        <td>
+            {% for researcher in project.researchers.all %}
+                {{ researcher.name }}{% if not forloop.last %}, {% endif %}
+            {% empty %}
+                No Researchers
+            {% endfor %}
+        </td>
+
+        <!-- Iterate through related Sponsors -->
+        <td>
+            {% for sponsor in project.sponsors.all %}
+                {{ sponsor.name }}{% if not forloop.last %}, {% endif %}
+            {% empty %}
+                No Sponsors
+            {% endfor %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

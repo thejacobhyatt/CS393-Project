@@ -1,0 +1,19 @@
+{% extends "rms_app/main.html" %}
+
+{% block content %}
+<h1>Researcher List</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+    </tr>
+    {% for researcher in researchers %}
+    <tr>
+        <td>{{ researcher.first_name }}{{ researcher.biography }}</td>
+        <td>{{ researcher.email }}</td>
+        <td>{{ researcher.phone }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

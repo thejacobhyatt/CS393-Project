@@ -18,6 +18,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('rms/', include("rms_app.urls")),
     path('admin/', admin.site.urls),
+    path('', include("rms_app.urls"))
 ]
