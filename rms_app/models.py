@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class Status(models.Model):
     status_id = models.AutoField(primary_key=True)
@@ -21,6 +22,8 @@ class Advisor(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     email = models.EmailField(max_length=50)
+    user = models.OneToOneField(User, null=True, on_delete=models.SET_NULL)
+
 
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
@@ -31,6 +34,8 @@ class Researcher(models.Model):
     last_name = models.CharField(max_length=50)
     email = models.EmailField(max_length=50)
     phone = models.CharField(max_length=50)
+    user = models.OneToOneField(User, null=True, on_delete=models.SET_NULL)
+
 
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
