@@ -33,7 +33,7 @@ advisor_csv_path = 'rms_app/data/advisors.csv'
 advisor_df = pd.read_csv(advisor_csv_path)
 
 for index, row in advisor_df.iterrows():
-    user = User.objects.filter(username=row['username']).first()
+    user = User.objects.filter(username=row['first_name']).first()
     advisor, created = Advisor.objects.get_or_create(
         email=row['email'],
         defaults={
@@ -49,7 +49,7 @@ researcher_csv_path = 'rms_app/data/researchers.csv'
 researcher_df = pd.read_csv(researcher_csv_path)
 
 for index, row in researcher_df.iterrows():
-    user = User.objects.filter(username=row['username']).first()
+    user = User.objects.filter(username=row['first_name']).first()
     researcher, created = Researcher.objects.get_or_create(
         email=row['email'],
         defaults={
@@ -66,6 +66,7 @@ sponsor_csv_path = 'rms_app/data/sponsors.csv'
 sponsor_df = pd.read_csv(sponsor_csv_path)
 
 for index, row in sponsor_df.iterrows():
+    user = User.objects.filter(username=row['name']).first()
     sponsor, created = Sponsor.objects.get_or_create(
         email=row['email'],
         defaults={
@@ -94,9 +95,8 @@ for index, row in project_df.iterrows():
     )
 
     # Link advisors
-    for advisor_name in row['advisors'].split(';'):
-        advisor = Advisor.objects.get(first_name=advisor_name.split()[0], last_name=advisor_name.split()[1])
-        project.advisors.add(advisor)
+    advisor = Advisor.objects.get(first_name=row['advisors'])
+    project.advisors.add(advisor)
 
     # Link researchers
     for researcher_name in row['researchers'].split(';'):

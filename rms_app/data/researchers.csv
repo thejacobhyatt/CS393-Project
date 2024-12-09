@@ -1,5 +1,151 @@
-first_name,last_name,email,phone,username
-David,Davis,david.davis@example.com,123-456-7890,david
-Eve,Evans,eve.evans@example.com,987-654-3210,eve
-Frank,Foster,frank.foster@example.com,456-789-1230,frank
-Alex,Johnson,researcher@example.com,555-555-5555,researcher
+name,year,department,email,phone,first_name,last_name
+Jack Kilby,2000,Physics,info@jackkilby.com,948-461-212,Jack,Kilby
+Alan J. Heeger,2000,Chemistry,info@alanj.heeger.com,355-106-418,Alan,Heeger
+Gao Xingjian,2000,Literature,info@gaoxingjian.com,103-641-507,Gao,Xingjian
+Kim Dae-jung,2000,Peace,info@kimdae-jung.com,827-297-102,Kim,Dae-jung
+James Heckman,2000,Economics,info@jamesheckman.com,714-148-758,James,Heckman
+Arvid Carlsson,2000,Medicine,info@arvidcarlsson.com,383-685-524,Arvid,Carlsson
+Eric Allin Cornell,2001,Physics,info@ericallincornell.com,166-122-744,Eric,Cornell
+William Standish Knowles,2001,Chemistry,info@williamstandishknowles.com,289-797-626,William,Knowles
+V. S. Naipaul,2001,Literature,info@v.s.naipaul.com,578-284-560,V.,Naipaul
+United Nations,2001,Peace,info@unitednations.com,591-310-870,United,Nations
+George Akerlof,2001,Economics,info@georgeakerlof.com,765-706-231,George,Akerlof
+Leland H. Hartwell,2001,Medicine,info@lelandh.hartwell.com,955-582-298,Leland,Hartwell
+Riccardo Giacconi,2002,Physics,info@riccardogiacconi.com,210-496-828,Riccardo,Giacconi
+John B. Fenn,2002,Chemistry,info@johnb.fenn.com,662-948-847,John,Fenn
+Imre Kertész,2002,Literature,info@imrekertész.com,203-527-600,Imre,Kertész
+Jimmy Carter,2002,Peace,info@jimmycarter.com,506-817-830,Jimmy,Carter
+Daniel Kahneman,2002,Economics,info@danielkahneman.com,391-498-721,Daniel,Kahneman
+Sydney Brenner,2002,Medicine,info@sydneybrenner.com,386-569-561,Sydney,Brenner
+Alexei Abrikosov,2003,Physics,info@alexeiabrikosov.com,784-321-942,Alexei,Abrikosov
+Peter Agre,2003,Chemistry,info@peteragre.com,385-127-522,Peter,Agre
+J. M. Coetzee,2003,Literature,info@j.m.coetzee.com,757-670-907,J.,Coetzee
+Shirin Ebadi,2003,Peace,info@shirinebadi.com,412-705-923,Shirin,Ebadi
+Robert F. Engle,2003,Economics,info@robertf.engle.com,711-879-710,Robert,Engle
+Paul Lauterbur,2003,Medicine,info@paullauterbur.com,435-100-612,Paul,Lauterbur
+David Gross,2004,Physics,info@davidgross.com,307-522-820,David,Gross
+Aaron Ciechanover,2004,Chemistry,info@aaronciechanover.com,475-506-931,Aaron,Ciechanover
+Elfriede Jelinek,2004,Literature,info@elfriedejelinek.com,349-365-902,Elfriede,Jelinek
+Wangari Maathai,2004,Peace,info@wangarimaathai.com,671-922-620,Wangari,Maathai
+Finn E. Kydland,2004,Economics,info@finne.kydland.com,875-104-391,Finn,Kydland
+Richard Axel,2004,Medicine,info@richardaxel.com,350-771-873,Richard,Axel
+Roy J. Glauber,2005,Physics,info@royj.glauber.com,129-177-186,Roy,Glauber
+Yves Chauvin,2005,Chemistry,info@yveschauvin.com,333-581-284,Yves,Chauvin
+Harold Pinter,2005,Literature,info@haroldpinter.com,412-255-543,Harold,Pinter
+International Atomic Energy Agency,2005,Peace,info@internationalatomicenergyagency.com,665-365-329,International,Agency
+Robert Aumann,2005,Economics,info@robertaumann.com,414-708-163,Robert,Aumann
+Barry Marshall,2005,Medicine,info@barrymarshall.com,308-621-596,Barry,Marshall
+John C. Mather,2006,Physics,info@johnc.mather.com,143-195-933,John,Mather
+Roger D. Kornberg,2006,Chemistry,info@rogerd.kornberg.com,470-353-138,Roger,Kornberg
+Orhan Pamuk,2006,Literature,info@orhanpamuk.com,561-746-262,Orhan,Pamuk
+Muhammad Yunus,2006,Peace,info@muhammadyunus.com,781-191-825,Muhammad,Yunus
+Edmund Phelps,2006,Economics,info@edmundphelps.com,144-151-154,Edmund,Phelps
+Andrew Fire,2006,Medicine,info@andrewfire.com,111-666-206,Andrew,Fire
+Albert Fert,2007,Physics,info@albertfert.com,168-215-284,Albert,Fert
+Gerhard Ertl,2007,Chemistry,info@gerhardertl.com,507-510-501,Gerhard,Ertl
+Doris Lessing,2007,Literature,info@dorislessing.com,187-738-292,Doris,Lessing
+Intergovernmental Panel on Climate Change,2007,Peace,info@intergovernmentalpanelonclimatechange.com,895-597-189,Intergovernmental,Change
+Leonid Hurwicz,2007,Economics,info@leonidhurwicz.com,177-699-898,Leonid,Hurwicz
+Mario Capecchi,2007,Medicine,info@mariocapecchi.com,583-251-578,Mario,Capecchi
+Yoichiro Nambu,2008,Physics,info@yoichironambu.com,620-228-560,Yoichiro,Nambu
+Osamu Shimomura,2008,Chemistry,info@osamushimomura.com,543-738-309,Osamu,Shimomura
+J. M. G. Le Clézio,2008,Literature,info@j.m.g.leclézio.com,858-876-265,J.,Clézio
+Martti Ahtisaari,2008,Peace,info@marttiahtisaari.com,328-460-278,Martti,Ahtisaari
+Paul Krugman,2008,Economics,info@paulkrugman.com,552-876-275,Paul,Krugman
+Harald zur Hausen,2008,Medicine,info@haraldzurhausen.com,740-617-486,Harald,Hausen
+Charles K. Kao,2009,Physics,info@charlesk.kao.com,797-992-228,Charles,Kao
+Venkatraman Ramakrishnan,2009,Chemistry,info@venkatramanramakrishnan.com,792-671-123,Venkatraman,Ramakrishnan
+Herta Müller,2009,Literature,info@hertamüller.com,797-424-780,Herta,Müller
+Barack Obama,2009,Peace,info@barackobama.com,580-252-494,Barack,Obama
+Elinor Ostrom,2009,Economics,info@elinorostrom.com,459-981-377,Elinor,Ostrom
+Elizabeth Blackburn,2009,Medicine,info@elizabethblackburn.com,654-700-409,Elizabeth,Blackburn
+Andre Geim,2010,Physics,info@andregeim.com,375-511-463,Andre,Geim
+Richard F. Heck,2010,Chemistry,info@richardf.heck.com,952-223-994,Richard,Heck
+Mario Vargas Llosa,2010,Literature,info@mariovargasllosa.com,398-365-751,Mario,Llosa
+Liu Xiaobo[g],2010,Peace,info@liuxiaobo[g].com,798-655-789,Liu,Xiaobo[g]
+Peter A. Diamond,2010,Economics,info@petera.diamond.com,458-187-277,Peter,Diamond
+Robert Edwards,2010,Medicine,info@robertedwards.com,695-445-357,Robert,Edwards
+Saul Perlmutter,2011,Physics,info@saulperlmutter.com,365-538-237,Saul,Perlmutter
+Dan Shechtman,2011,Chemistry,info@danshechtman.com,780-926-517,Dan,Shechtman
+Tomas Tranströmer,2011,Literature,info@tomastranströmer.com,769-848-394,Tomas,Tranströmer
+Ellen Johnson Sirleaf,2011,Peace,info@ellenjohnsonsirleaf.com,179-605-857,Ellen,Sirleaf
+Thomas J. Sargent,2011,Economics,info@thomasj.sargent.com,454-589-718,Thomas,Sargent
+Bruce Beutler,2011,Medicine,info@brucebeutler.com,890-581-508,Bruce,Beutler
+Serge Haroche,2012,Physics,info@sergeharoche.com,947-313-458,Serge,Haroche
+Brian K. Kobilka,2012,Chemistry,info@briank.kobilka.com,566-408-215,Brian,Kobilka
+Mo Yan,2012,Literature,info@moyan.com,489-266-654,Mo,Yan
+European Union,2012,Peace,info@europeanunion.com,960-385-281,European,Union
+Alvin E. Roth,2012,Economics,info@alvine.roth.com,356-373-236,Alvin,Roth
+John B. Gurdon,2012,Medicine,info@johnb.gurdon.com,651-126-556,John,Gurdon
+François Englert,2013,Physics,info@françoisenglert.com,956-612-592,François,Englert
+Martin Karplus,2013,Chemistry,info@martinkarplus.com,954-375-203,Martin,Karplus
+Alice Munro,2013,Literature,info@alicemunro.com,933-345-583,Alice,Munro
+Organisation for the Prohibition of Chemical Weapons,2013,Peace,info@organisationfortheprohibitionofchemicalweapons.com,554-972-827,Organisation,Weapons
+Eugene F. Fama,2013,Economics,info@eugenef.fama.com,306-384-369,Eugene,Fama
+James E. Rothman,2013,Medicine,info@jamese.rothman.com,622-214-810,James,Rothman
+Isamu Akasaki,2014,Physics,info@isamuakasaki.com,741-458-154,Isamu,Akasaki
+Eric Betzig,2014,Chemistry,info@ericbetzig.com,318-981-926,Eric,Betzig
+Patrick Modiano,2014,Literature,info@patrickmodiano.com,936-127-247,Patrick,Modiano
+Kailash Satyarthi,2014,Peace,info@kailashsatyarthi.com,896-822-538,Kailash,Satyarthi
+Jean Tirole,2014,Economics,info@jeantirole.com,753-838-319,Jean,Tirole
+John O'Keefe,2014,Medicine,info@johno'keefe.com,537-782-481,John,O'Keefe
+Takaaki Kajita,2015,Physics,info@takaakikajita.com,809-750-763,Takaaki,Kajita
+Tomas Lindahl,2015,Chemistry,info@tomaslindahl.com,912-881-644,Tomas,Lindahl
+Svetlana Alexievich,2015,Literature,info@svetlanaalexievich.com,321-400-177,Svetlana,Alexievich
+Tunisian National Dialogue Quartet,2015,Peace,info@tunisiannationaldialoguequartet.com,765-902-348,Tunisian,Quartet
+Angus Deaton,2015,Economics,info@angusdeaton.com,172-962-198,Angus,Deaton
+William C. Campbell,2015,Medicine,info@williamc.campbell.com,585-294-368,William,Campbell
+David J. Thouless,2016,Physics,info@davidj.thouless.com,310-789-689,David,Thouless
+Jean-Pierre Sauvage,2016,Chemistry,info@jean-pierresauvage.com,316-115-604,Jean-Pierre,Sauvage
+Bob Dylan,2016,Literature,info@bobdylan.com,743-191-439,Bob,Dylan
+Juan Manuel Santos,2016,Peace,info@juanmanuelsantos.com,685-406-193,Juan,Santos
+Oliver Hart,2016,Economics,info@oliverhart.com,450-781-355,Oliver,Hart
+Yoshinori Ohsumi,2016,Medicine,info@yoshinoriohsumi.com,995-802-646,Yoshinori,Ohsumi
+Rainer Weiss,2017,Physics,info@rainerweiss.com,464-994-411,Rainer,Weiss
+Jacques Dubochet,2017,Chemistry,info@jacquesdubochet.com,503-976-208,Jacques,Dubochet
+Kazuo Ishiguro,2017,Literature,info@kazuoishiguro.com,178-962-226,Kazuo,Ishiguro
+International Campaign to Abolish Nuclear Weapons,2017,Peace,info@internationalcampaigntoabolishnuclearweapons.com,330-909-570,International,Weapons
+Richard Thaler,2017,Economics,info@richardthaler.com,493-326-297,Richard,Thaler
+Jeffrey C. Hall,2017,Medicine,info@jeffreyc.hall.com,524-392-246,Jeffrey,Hall
+Arthur Ashkin,2018,Physics,info@arthurashkin.com,470-596-993,Arthur,Ashkin
+Frances H. Arnold,2018,Chemistry,info@francesh.arnold.com,394-164-529,Frances,Arnold
+Olga Tokarczuk[h],2018,Literature,info@olgatokarczuk[h].com,126-827-378,Olga,Tokarczuk[h]
+Denis Mukwege,2018,Peace,info@denismukwege.com,234-577-366,Denis,Mukwege
+William Nordhaus,2018,Economics,info@williamnordhaus.com,364-808-472,William,Nordhaus
+James P. Allison,2018,Medicine,info@jamesp.allison.com,546-428-583,James,Allison
+Jim Peebles,2019,Physics,info@jimpeebles.com,458-878-652,Jim,Peebles
+John B. Goodenough,2019,Chemistry,info@johnb.goodenough.com,450-881-998,John,Goodenough
+Peter Handke,2019,Literature,info@peterhandke.com,554-523-182,Peter,Handke
+Abiy Ahmed,2019,Peace,info@abiyahmed.com,323-143-937,Abiy,Ahmed
+Abhijit Banerjee,2019,Economics,info@abhijitbanerjee.com,623-751-324,Abhijit,Banerjee
+William Kaelin Jr.,2019,Medicine,info@williamkaelinjr..com,308-928-280,William,Jr.
+Roger Penrose,2020,Physics,info@rogerpenrose.com,413-606-263,Roger,Penrose
+Emmanuelle Charpentier,2020,Chemistry,info@emmanuellecharpentier.com,902-653-762,Emmanuelle,Charpentier
+Louise Glück,2020,Literature,info@louiseglück.com,964-913-785,Louise,Glück
+World Food Programme,2020,Peace,info@worldfoodprogramme.com,965-909-938,World,Programme
+Paul Milgrom,2020,Economics,info@paulmilgrom.com,719-865-909,Paul,Milgrom
+Harvey J. Alter,2020,Medicine,info@harveyj.alter.com,970-185-616,Harvey,Alter
+Giorgio Parisi,2021,Physics,info@giorgioparisi.com,876-775-214,Giorgio,Parisi
+Benjamin List,2021,Chemistry,info@benjaminlist.com,826-765-244,Benjamin,List
+Abdulrazak Gurnah,2021,Literature,info@abdulrazakgurnah.com,194-183-424,Abdulrazak,Gurnah
+Maria Ressa,2021,Peace,info@mariaressa.com,189-133-168,Maria,Ressa
+David Card,2021,Economics,info@davidcard.com,212-101-336,David,Card
+David Julius,2021,Medicine,info@davidjulius.com,549-158-189,David,Julius
+Alain Aspect,2022,Physics,info@alainaspect.com,796-661-263,Alain,Aspect
+Carolyn Bertozzi,2022,Chemistry,info@carolynbertozzi.com,874-429-756,Carolyn,Bertozzi
+Annie Ernaux,2022,Literature,info@annieernaux.com,905-992-314,Annie,Ernaux
+Ales Bialiatski,2022,Peace,info@alesbialiatski.com,343-257-347,Ales,Bialiatski
+Ben Bernanke,2022,Economics,info@benbernanke.com,881-586-364,Ben,Bernanke
+Svante Pääbo,2022,Medicine,info@svantepääbo.com,587-414-155,Svante,Pääbo
+Pierre Agostini,2023,Physics,info@pierreagostini.com,338-503-525,Pierre,Agostini
+Moungi Bawendi,2023,Chemistry,info@moungibawendi.com,952-331-910,Moungi,Bawendi
+Jon Fosse,2023,Literature,info@jonfosse.com,860-347-296,Jon,Fosse
+Narges Mohammadi,2023,Peace,info@nargesmohammadi.com,765-516-824,Narges,Mohammadi
+Claudia Goldin,2023,Economics,info@claudiagoldin.com,582-352-540,Claudia,Goldin
+Katalin Karikó,2023,Medicine,info@katalinkarikó.com,233-799-894,Katalin,Karikó
+John Hopfield,2024,Physics,info@johnhopfield.com,233-909-421,John,Hopfield
+David Baker,2024,Chemistry,info@davidbaker.com,190-694-532,David,Baker
+Han Kang,2024,Literature,info@hankang.com,867-833-377,Han,Kang
+Nihon Hidankyo,2024,Peace,info@nihonhidankyo.com,103-890-585,Nihon,Hidankyo
+Daron Acemoglu,2024,Economics,info@daronacemoglu.com,925-545-403,Daron,Acemoglu
+Victor Ambros,2024,Medicine,info@victorambros.com,617-246-829,Victor,Ambros

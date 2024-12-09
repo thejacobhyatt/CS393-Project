@@ -15,12 +15,15 @@
         <div class="navbar">
             <a class="active" href="{% url 'index' %}"><i class="fa fa-fw fa-home"></i> Home</a>
             <a href="{% url 'project' %}"><i class="fa fa-address-book"></i> Projects</a>
+            <a href="{% url 'sponsors' %}"><i class="fa fa-address-book"></i> Sponsors</a>
             {% if user.is_authenticated %}
                 {% if is_researcher %}
                     <a href="{% url 'your_project' %}"><i class="fa fa-address-book"></i> Your Projects</a>
                 {% elif is_advisor %}
                     <a href="{% url 'researcher' %}"><i class="fa fa-address-book"></i> Researchers</a>
                     <a href="{% url 'add_project' %}"><i class="fa fa-fw fa-plus-circle"></i> Add Project</a>
+                {% elif is_sponsor %}
+                    <a href="{% url 'your_sponsor' %}"><i class="fa fa-fw fa-plus-circle"></i> Your Sponsorship</a>
                 {% endif %}
                 <a href="{% url 'logout' %}" class="logout-button">Logout</a>
             {% else %}

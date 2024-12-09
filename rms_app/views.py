@@ -12,16 +12,20 @@ from django.contrib import messages
 
 from django.contrib.auth import logout
 from django.shortcuts import redirect
+from decimal import Decimal
 
 def index(request):
     # Check if user belongs to Researcher or Advisors group
     is_researcher = request.user.groups.filter(name="Researcher").exists()
     is_advisor = request.user.groups.filter(name="Advisors").exists()
+    is_sponsor = request.user.groups.filter(name="Sponsor").exists()
+
 
     # Pass these values to the template
     context = {
         'is_researcher': is_researcher,
         'is_advisor': is_advisor,
+        'is_sponsor': is_sponsor,
     }
 
     return render(request, 'rms_app/main.html', context)
@@ -61,10 +65,13 @@ def your_view(request):
     # Checking if the user is in the "Researcher" or "Advisors" group
     is_researcher = request.user.groups.filter(name="Researcher").exists()
     is_advisor = request.user.groups.filter(name="Advisors").exists()
+    is_sponsor = request.user.groups.filter(name="Sponsor").exists()
+
 
     context = {
         'is_researcher': is_researcher,
         'is_advisor': is_advisor,
+        'is_sponsor': is_sponsor,
     }
     return render(request, 'rms_app/main.html', context)
 
@@ -72,14 +79,56 @@ def your_view(request):
 def project(request):
     is_researcher = request.user.groups.filter(name="Researcher").exists()
     is_advisor = request.user.groups.filter(name="Advisors").exists()
+    is_sponsor = request.user.groups.filter(name="Sponsor").exists()
+
 
     data = ResearchProject.objects.prefetch_related('advisors', 'researchers', 'sponsors')
     for proj in data:
         print(f"Project: {proj.title}, Advisors: {[adv.first_name for adv in proj.advisors.all()]}")
     context = {'projects': data,
                'is_researcher': is_researcher,
-                'is_advisor': is_advisor,}
+                'is_advisor': is_advisor,
+                'is_sponsor': is_sponsor,
+}
     return render(request, "rms_app/project_list.html", context)
+
+@login_required
+def add_donation(request, project_id):
+    if request.method == 'POST':
+        # Get the project by its ID
+        project = get_object_or_404(ResearchProject, project_id=project_id)
+        
+        # Get the additional donation amount from the form
+        additional_donation = Decimal(request.POST.get('donation_amount'))  # Use Decimal for accurate currency handling
+        
+        # Optionally, get the current user as the sponsor (if they are a sponsor)
+
+        # Update the project with the new donation amount and sponsor name
+        project.amount_donated += additional_donation
+        project.save()
+
+        # Redirect to the sponsor page for that project or another appropriate page
+        return redirect('your_sponsor')  # Adjust as needed to redirect to the correct page
+    else:
+        # If it's not a POST request, redirect or show an error
+        return redirect('your_sponsor')  # Adjust as needed
+
+
+def sponsors(request):
+    is_researcher = request.user.groups.filter(name="Researcher").exists()
+    is_advisor = request.user.groups.filter(name="Advisors").exists()
+    is_sponsor = request.user.groups.filter(name="Sponsor").exists()
+
+
+    data = Sponsor.objects.all()
+    
+    context = {'sponsors': data,
+               'is_researcher': is_researcher,
+                'is_advisor': is_advisor,
+                'is_sponsor': is_sponsor,
+                }
+    return render(request, "rms_app/sponsors_list.html", context)
+
 
 @login_required
 def researcher(request):
@@ -118,12 +167,13 @@ def your_project(request):
 
     # Get the current user
     user = request.user
-    print(f"User: {user}")
+    first_name = user.first_name
+    print(f"User: {first_name}")
 
     # Handle the case where the user might not be a researcher
     try:
-        # Get the corresponding Researcher instance for the current user
-        researcher = Researcher.objects.get(user=user)
+        # Get the corresponding Researcher instance for the current user by first_name
+        researcher = Researcher.objects.get(first_name=first_name)
         print(f"Researcher found: {researcher}")
     except Researcher.DoesNotExist:
         researcher = None  # Or you can return an error page or redirect
@@ -143,8 +193,7 @@ def your_project(request):
         'is_researcher': is_researcher,
         'is_advisor': is_advisor,
     }
-    
-    # Return the template with the context
+
     return render(request, 'rms_app/your_project.html', context)
 
 
@@ -204,3 +253,38 @@ def add_project(request):
             messages.error(request, f"Error: {str(e)}")
     
     return render(request, 'rms_app/add_project.html', context)
+
+
+
+@login_required
+def your_sponsor(request):
+    # Check if the user is in the Sponsor group
+    is_sponsor = request.user.groups.filter(name="Sponsor").exists()
+
+    # Get the current user
+    user = request.user
+
+    # Handle the case where the user might not be a sponsor
+    try:
+        # Get the corresponding Sponsor instance for the current user by name (or use user.first_name, or another unique identifier)
+        sponsor = Sponsor.objects.get(name=user.first_name)  # Adjust if needed based on your model setup
+        print(f"Sponsor found: {sponsor}")
+    except Sponsor.DoesNotExist:
+        sponsor = None  # Handle case if no sponsor is found for this user
+        print("Sponsor does not exist for this user")
+
+    # Filter projects associated with the current user (Sponsor)
+    if sponsor:
+        user_projects = ResearchProject.objects.all()
+        print(f"User's Sponsored Projects: {user_projects}")
+    else:
+        user_projects = []  # No projects if the user is not a sponsor
+        print("No projects for non-sponsor")
+
+    # Pass the filtered projects to the context
+    context = {
+        'user_projects': user_projects,
+        'is_sponsor': is_sponsor,
+    }
+
+    return render(request, 'rms_app/your_sponsor.html', context)

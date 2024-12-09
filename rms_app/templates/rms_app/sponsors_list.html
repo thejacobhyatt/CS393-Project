@@ -1,0 +1,22 @@
+{% extends "rms_app/main.html" %}
+
+{% block content %}
+<h1>Sponsor List</h1>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Amount Donated</th>
+    </tr>
+    {% for sponsor in sponsors %}
+    <tr>
+        <td>{{ sponsor.name }}</td>
+        <td>{{ sponsor.email }}</td>
+        <td>{{ sponsor.phone }}</td>
+        <td>{{ sponsor.amount_donated }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

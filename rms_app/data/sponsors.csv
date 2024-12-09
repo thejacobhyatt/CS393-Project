@@ -1,101 +1,101 @@
 name,amount_donated,phone,email
-Walmart,648125,742227453,admin@walmart.com
-Amazon,574785,090897093,admin@amazon.com
-Apple,383482,082940234,admin@apple.com
-UnitedHealth Group,371622,423402643,admin@unitedhealthgroup.com
-Berkshire Hathaway,364482,238507942,admin@berkshirehathaway.com
-CVS Health,357776,384540204,admin@cvshealth.com
-ExxonMobil,344582,137710298,admin@exxonmobil.com
-Alphabet,307394,616858617,admin@alphabet.com
-McKesson Corporation,276711,977139835,admin@mckessoncorporation.com
-Cencora,262173,527116530,admin@cencora.com
-Costco,242290,997780024,admin@costco.com
-JPMorgan Chase,239425,792347613,admin@jpmorganchase.com
-Microsoft,211915,444143544,admin@microsoft.com
-Cardinal Health,205012,052637805,admin@cardinalhealth.com
-Chevron Corporation,200949,426629520,admin@chevroncorporation.com
-Cigna,195265,640275285,admin@cigna.com
-Ford Motor Company,176191,389097752,admin@fordmotorcompany.com
-Bank of America,171912,557218774,admin@bankofamerica.com
-General Motors,171842,550933487,admin@generalmotors.com
-Elevance Health,171340,072928784,admin@elevancehealth.com
-Citigroup,156820,860194635,admin@citigroup.com
-Centene,153999,486052767,admin@centene.com
-The Home Depot,152669,072270446,admin@thehomedepot.com
-Marathon Petroleum,150307,729021438,admin@marathonpetroleum.com
-Kroger,150039,292566736,admin@kroger.com
-Phillips 66,149890,639690896,admin@phillips66.com
-Fannie Mae,141240,704120817,admin@fanniemae.com
-Walgreens Boots Alliance,139081,420419809,admin@walgreensbootsalliance.com
-Valero Energy,139001,495971044,admin@valeroenergy.com
-Meta Platforms,134902,547882148,admin@metaplatforms.com
-Verizon Communications,133974,006445326,admin@verizoncommunications.com
-AT&T,122428,711122821,admin@at&t.com
-Comcast,121572,838164691,admin@comcast.com
-Wells Fargo,115340,639773082,admin@wellsfargo.com
-Goldman Sachs,108418,587769300,admin@goldmansachs.com
-Freddie Mac,108050,289970991,admin@freddiemac.com
-Target Corporation,107412,252677166,admin@targetcorporation.com
-Humana,106374,369730084,admin@humana.com
-State Farm,104199,488076069,admin@statefarm.com
-Tesla,96773,051993394,admin@tesla.com
-Morgan Stanley,96194,354550041,admin@morganstanley.com
-Johnson & Johnson,95195,132118990,admin@johnson&johnson.com
-Archer Daniels Midland,93935,053880542,admin@archerdanielsmidland.com
-PepsiCo,91471,527241513,admin@pepsico.com
-United Parcel Service,90958,080520192,admin@unitedparcelservice.com
-FedEx,90155,774441071,admin@fedex.com
-The Walt Disney Company,88898,321124782,admin@thewaltdisneycompany.com
-Dell Technologies,88425,974336405,admin@delltechnologies.com
-Lowe's,86377,153135030,admin@lowe's.com
-Procter & Gamble,82006,991138560,admin@procter&gamble.com
-Energy Transfer Partners,78586,058215793,admin@energytransferpartners.com
-Boeing,77794,804652456,admin@boeing.com
-Albertsons,77650,163365059,admin@albertsons.com
-Sysco,76325,131274742,admin@sysco.com
-RTX Corporation,68920,137414814,admin@rtxcorporation.com
-General Electric,67954,865786640,admin@generalelectric.com
-Lockheed Martin,67571,660888484,admin@lockheedmartin.com
-American Express,67364,526163540,admin@americanexpress.com
-Caterpillar,67060,680807576,admin@caterpillar.com
-MetLife,66905,075500303,admin@metlife.com
-HCA Healthcare,64968,291316042,admin@hcahealthcare.com
-Progressive Corporation,62109,082977328,admin@progressivecorporation.com
-IBM,61860,150810745,admin@ibm.com
-John Deere,61251,088930603,admin@johndeere.com
-Nvidia,60922,682704411,admin@nvidia.com
-StoneX Group,60856,639546139,admin@stonexgroup.com
-Merck & Co.,60115,709834776,admin@merck&co..com
-ConocoPhillips,58574,327416621,admin@conocophillips.com
-Pfizer,58496,910389599,admin@pfizer.com
-Delta Air Lines,58048,001251816,admin@deltaairlines.com
-TD Synnex,57555,547236819,admin@tdsynnex.com
-Publix,57534,181850948,admin@publix.com
-Allstate,57094,910247426,admin@allstate.com
-Cisco,56998,560305914,admin@cisco.com
-Nationwide Mutual Insurance Company,54609,740388287,admin@nationwidemutualinsurancecompany.com
-Charter Communications,54607,958886489,admin@chartercommunications.com
-AbbVie,54317,963368419,admin@abbvie.com
-New York Life Insurance Company,54317,107945072,admin@newyorklifeinsurancecompany.com
-Intel,54228,376898868,admin@intel.com
-TJX,49936,627711595,admin@tjx.com
-Prudential Financial,53979,485395430,admin@prudentialfinancial.com
-HP,53718,741827129,admin@hp.com
-United Airlines,53717,542023670,admin@unitedairlines.com
-Performance Food Group,53355,949398293,admin@performancefoodgroup.com
-Tyson Foods,52788,016300740,admin@tysonfoods.com
-American Airlines,52788,222757215,admin@americanairlines.com
-Liberty Mutual,52612,960804299,admin@libertymutual.com
-Nike,51217,485838700,admin@nike.com
-Oracle Corporation,49954,955068497,admin@oraclecorporation.com
-Enterprise Products,49715,599989169,admin@enterpriseproducts.com
-Capital One Financial,49484,290904129,admin@capitalonefinancial.com
-Plains All American Pipeline,48712,409627263,admin@plainsallamericanpipeline.com
-World Kinect Corporation,47711,829597963,admin@worldkinectcorporation.com
-AIG,46802,114311929,admin@aig.com
-Coca-Cola,45754,564946628,admin@coca-cola.com
-TIAA,45735,037829257,admin@tiaa.com
-CHS,45590,196706692,admin@chs.com
-Bristol-Myers Squibb,45006,996301454,admin@bristol-myerssquibb.com
-Dow Chemical Company,44622,682620941,admin@dowchemicalcompany.com
-Best Buy,43452,435057689,admin@bestbuy.com
+Walmart,648125,247-213-619,admin@walmart.com
+Amazon,574785,647-532-888,admin@amazon.com
+Apple,383482,469-311-916,admin@apple.com
+UnitedHealth Group,371622,212-202-463,admin@unitedhealthgroup.com
+Berkshire Hathaway,364482,455-407-914,admin@berkshirehathaway.com
+CVS Health,357776,799-861-213,admin@cvshealth.com
+ExxonMobil,344582,814-871-368,admin@exxonmobil.com
+Alphabet,307394,409-598-158,admin@alphabet.com
+McKesson Corporation,276711,946-350-905,admin@mckessoncorporation.com
+Cencora,262173,221-203-584,admin@cencora.com
+Costco,242290,105-464-710,admin@costco.com
+JPMorgan Chase,239425,156-173-886,admin@jpmorganchase.com
+Microsoft,211915,208-747-998,admin@microsoft.com
+Cardinal Health,205012,421-914-372,admin@cardinalhealth.com
+Chevron Corporation,200949,201-126-480,admin@chevroncorporation.com
+Cigna,195265,921-659-195,admin@cigna.com
+Ford Motor Company,176191,800-417-420,admin@fordmotorcompany.com
+Bank of America,171912,450-435-394,admin@bankofamerica.com
+General Motors,171842,933-468-682,admin@generalmotors.com
+Elevance Health,171340,662-627-803,admin@elevancehealth.com
+Citigroup,156820,229-666-242,admin@citigroup.com
+Centene,153999,649-654-979,admin@centene.com
+The Home Depot,152669,335-310-245,admin@thehomedepot.com
+Marathon Petroleum,150307,541-214-664,admin@marathonpetroleum.com
+Kroger,150039,955-469-897,admin@kroger.com
+Phillips 66,149890,982-629-883,admin@phillips66.com
+Fannie Mae,141240,675-157-187,admin@fanniemae.com
+Walgreens Boots Alliance,139081,308-840-799,admin@walgreensbootsalliance.com
+Valero Energy,139001,589-338-148,admin@valeroenergy.com
+Meta Platforms,134902,473-319-574,admin@metaplatforms.com
+Verizon Communications,133974,358-379-524,admin@verizoncommunications.com
+AT&T,122428,125-245-885,admin@at&t.com
+Comcast,121572,316-237-352,admin@comcast.com
+Wells Fargo,115340,242-524-986,admin@wellsfargo.com
+Goldman Sachs,108418,613-351-311,admin@goldmansachs.com
+Freddie Mac,108050,671-693-146,admin@freddiemac.com
+Target Corporation,107412,260-255-814,admin@targetcorporation.com
+Humana,106374,690-879-445,admin@humana.com
+State Farm,104199,823-223-248,admin@statefarm.com
+Tesla,96773,879-854-282,admin@tesla.com
+Morgan Stanley,96194,245-821-940,admin@morganstanley.com
+Johnson & Johnson,95195,860-179-833,admin@johnson&johnson.com
+Archer Daniels Midland,93935,682-525-285,admin@archerdanielsmidland.com
+PepsiCo,91471,896-261-155,admin@pepsico.com
+United Parcel Service,90958,454-328-375,admin@unitedparcelservice.com
+FedEx,90155,498-483-464,admin@fedex.com
+The Walt Disney Company,88898,253-200-474,admin@thewaltdisneycompany.com
+Dell Technologies,88425,223-186-461,admin@delltechnologies.com
+Lowe's,86377,962-824-143,admin@lowe's.com
+Procter & Gamble,82006,644-706-218,admin@procter&gamble.com
+Energy Transfer Partners,78586,863-985-768,admin@energytransferpartners.com
+Boeing,77794,302-235-601,admin@boeing.com
+Albertsons,77650,346-893-309,admin@albertsons.com
+Sysco,76325,691-390-958,admin@sysco.com
+RTX Corporation,68920,540-655-575,admin@rtxcorporation.com
+General Electric,67954,707-133-722,admin@generalelectric.com
+Lockheed Martin,67571,667-938-945,admin@lockheedmartin.com
+American Express,67364,330-535-871,admin@americanexpress.com
+Caterpillar,67060,259-972-530,admin@caterpillar.com
+MetLife,66905,885-978-475,admin@metlife.com
+HCA Healthcare,64968,185-635-676,admin@hcahealthcare.com
+Progressive Corporation,62109,985-402-975,admin@progressivecorporation.com
+IBM,61860,882-800-178,admin@ibm.com
+John Deere,61251,335-371-252,admin@johndeere.com
+Nvidia,60922,771-728-381,admin@nvidia.com
+StoneX Group,60856,152-614-167,admin@stonexgroup.com
+Merck & Co.,60115,399-817-935,admin@merck&co..com
+ConocoPhillips,58574,515-467-736,admin@conocophillips.com
+Pfizer,58496,855-819-883,admin@pfizer.com
+Delta Air Lines,58048,801-887-343,admin@deltaairlines.com
+TD Synnex,57555,316-299-923,admin@tdsynnex.com
+Publix,57534,728-250-616,admin@publix.com
+Allstate,57094,220-186-885,admin@allstate.com
+Cisco,56998,244-965-179,admin@cisco.com
+Nationwide Mutual Insurance Company,54609,914-693-134,admin@nationwidemutualinsurancecompany.com
+Charter Communications,54607,623-648-387,admin@chartercommunications.com
+AbbVie,54317,689-288-862,admin@abbvie.com
+New York Life Insurance Company,54317,496-115-844,admin@newyorklifeinsurancecompany.com
+Intel,54228,220-783-469,admin@intel.com
+TJX,49936,799-391-912,admin@tjx.com
+Prudential Financial,53979,460-907-896,admin@prudentialfinancial.com
+HP,53718,746-190-259,admin@hp.com
+United Airlines,53717,657-437-809,admin@unitedairlines.com
+Performance Food Group,53355,829-492-925,admin@performancefoodgroup.com
+Tyson Foods,52788,417-154-241,admin@tysonfoods.com
+American Airlines,52788,169-287-615,admin@americanairlines.com
+Liberty Mutual,52612,767-828-931,admin@libertymutual.com
+Nike,51217,353-719-978,admin@nike.com
+Oracle Corporation,49954,159-693-736,admin@oraclecorporation.com
+Enterprise Products,49715,930-976-948,admin@enterpriseproducts.com
+Capital One Financial,49484,326-547-482,admin@capitalonefinancial.com
+Plains All American Pipeline,48712,725-337-794,admin@plainsallamericanpipeline.com
+World Kinect Corporation,47711,685-229-796,admin@worldkinectcorporation.com
+AIG,46802,643-646-369,admin@aig.com
+Coca-Cola,45754,937-613-984,admin@coca-cola.com
+TIAA,45735,299-989-927,admin@tiaa.com
+CHS,45590,914-966-666,admin@chs.com
+Bristol-Myers Squibb,45006,948-687-175,admin@bristol-myerssquibb.com
+Dow Chemical Company,44622,683-601-853,admin@dowchemicalcompany.com
+Best Buy,43452,748-640-416,admin@bestbuy.com

@@ -10,4 +10,7 @@ urlpatterns = [
     path('delete_project/<int:project_id>/', views.delete_project, name='delete_project'),
     path('logout/', views.logout_view, name='logout'),  # Logout URL
     path('your_project/', views.your_project, name='your_project'),
+    path("sponsors", views.sponsors, name="sponsors"),
+    path('your_sponsor/', views.your_sponsor, name='your_sponsor'),
+    path('your_sponsor/<int:project_id>/add_donation/', views.add_donation, name='add_donation'),
 ]
