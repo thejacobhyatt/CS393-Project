@@ -3,18 +3,28 @@
 {% block content %}
 
 <h1>Login</h1>
+
 {% if messages %}
-    {% for message in messages %}
-        <p>{{ message }}</p>
-    {% endfor %}
+    <div class="messages">
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    </div>
 {% endif %}
-<form method="post">
-    {% csrf_token %}
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required><br>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required><br>
-    <button type="submit">Login</button>
-</form>
+
+{% if not user.is_authenticated %}
+    <!-- Show login form if the user is not logged in -->
+    <form method="post">
+        {% csrf_token %}
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <button type="submit">Login</button>
+    </form>
+{% else %}
+    <!-- Show message if user is logged in -->
+    <p>You are already logged in. <a href="{% url 'logout' %}">Logout</a></p>
+{% endif %}
 
 {% endblock %}

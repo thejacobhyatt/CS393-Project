@@ -1,0 +1,4 @@
+status_name,status_color
+Pending,FF0000
+In Progress,FFFF00
+Completed,00FF00

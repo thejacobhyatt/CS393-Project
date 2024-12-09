@@ -13,9 +13,10 @@ class Department(models.Model):
     department_id = models.AutoField(primary_key=True)
     department_head = models.CharField(max_length=50)
     department_loc = models.CharField(max_length=6)
+    department_name = models.CharField(max_length=20)
 
     def __str__(self):
-        return f"{self.department_head} - {self.department_loc}"
+        return f"{self.department_name}"
 
 class Advisor(models.Model):
     advisor_id = models.AutoField(primary_key=True)

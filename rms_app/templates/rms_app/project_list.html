@@ -2,6 +2,7 @@
 
 {% block content %}
 <h1>Project List</h1>
+
 <table>
     <tr>
         <th>Title</th>
@@ -20,11 +21,11 @@
         <td>{{ project.status }}</td>
         <td>{{ project.department }}</td>
         <td>{{ project.start_date }}</td>
-        
-        <!-- Iterate through related Advisors -->
+
+        <!-- Iterate through related Advisors with comma separation -->
         <td>
             {% for advisor in project.advisors.all %}
-                {{ advisor.name }}{% if not forloop.last %}, {% endif %}
+                {{ advisor.first_name }} {{ advisor.last_name }}{% if not forloop.last %}, {% endif %}
             {% empty %}
                 No Advisors
             {% endfor %}
@@ -33,7 +34,7 @@
         <!-- Iterate through related Researchers -->
         <td>
             {% for researcher in project.researchers.all %}
-                {{ researcher.name }}{% if not forloop.last %}, {% endif %}
+                {{ researcher.first_name }} {{researcher.last_name}}{% if not forloop.last %}, {% endif %}
             {% empty %}
                 No Researchers
             {% endfor %}
