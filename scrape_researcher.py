@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+import random
+
 
 url = 'https://en.wikipedia.org/wiki/List_of_Nobel_laureates'  
 response = requests.get(url)
@@ -34,5 +36,18 @@ for index, row in df.iterrows():
         first_name = row[department].split(';')[0].strip()
         records.append({'Name': first_name, 'Year': row['Year'], 'Department': department})
 
-df_names = pd.DataFrame(records)
-df_names.to_csv('researcher.csv', index=False)
+df = pd.DataFrame(records)
+
+
+df['email'] = ['info@' + name.replace(' ', '').lower() + '.com' for name in df['Name']]
+df['phone'] = [f"{random.randint(100, 999)}-{random.randint(100, 999)}-{random.randint(100, 999)}" for _ in range(len(df))]
+df['first_name'] = df['Name'].apply(lambda x: x.split()[0])
+df['last_name'] = df['Name'].apply(lambda x: x.split()[-1])
+
+df = df.rename(columns={
+    'Name': 'name',
+    'Year': 'year',
+    'Department': 'department'
+    })
+
+df.to_csv('researchers.csv', index=False)
